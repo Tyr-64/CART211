@@ -1,32 +1,106 @@
 <!DOCTYPE html>
-<html lang=""en>
+<html lang="" en>
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Origins of the Web</title>
+    <style>
+        #lead:hover~#msg {
+            display: block;
+            animation-name: revealAnim;
+            animation-duration: 1.2s;
+        }
+
+        #lead:hover~#focus {
+            display: block;
+            opacity: 0.5;
+            animation-name: focusAnim;
+            animation-duration: 1s;
+        }
+
+        #focus {
+            background-color: black;
+            display: none;
+            position: fixed;
+            pointer-events: none;
+            left: 0px;
+            top: 0px;
+            width: 120%;
+            height: 120%;
+            z-index: 10;
+        }
+
+        #msg {
+            position: fixed;
+            pointer-events: none;
+            z-index: 10;
+            left: 40%;
+            width: 30%;
+            outline: auto;
+            padding: 10px;
+            background-color: white;
+            display: none;
+        }
+
+        @keyframes revealAnim {
+            0% {
+                opacity: 0.0;
+                left: 0%;
+            }
+
+            100% {
+                opacity: 1.0;
+                left: 40%;
+            }
+        }
+
+        @keyframes focusAnim {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 0.5
+            }
+        }
+    </style>
 </head>
+
 <body style="font-family: Arial, Helvetica, sans-serif; padding: 20px;">
     <nav>
-        <a style="text-decoration: none; color: black; font-size: 125%; font-weight: bold;" href="index.html">Web 1.0</a> | <a style="text-decoration: none; color: black; font-size: 125%; font-weight: bold;" href="web2.html">Web 2.0</a> | <a style="text-decoration: none; color: black; font-size: 125%; font-weight: bold;" href="web3.html">Web 3.0</a> | <a style="text-decoration: none; color: black; font-size: 125%; font-weight: bold;" href="web4.html"> Web 4.0</a>
+        <a style="text-decoration: none; color: black; font-size: 125%; font-weight: bold;" href="index.html">Web
+            1.0</a> | <a style="text-decoration: none; color: black; font-size: 125%; font-weight: bold;"
+            href="web2.html">Web 2.0</a> | <a
+            style="text-decoration: none; color: black; font-size: 125%; font-weight: bold;" href="web3.html">Web
+            3.0</a> | <a style="text-decoration: none; color: black; font-size: 125%; font-weight: bold;"
+            href="web4.html"> Web 4.0</a>
     </nav>
-    <div>
-    <header style="float: left; font-size: 300%; padding-right: 20px">
+    <header id="lead"
+        style="float: left; color: rgb(231, 34, 34); text-decoration: underline; font-size: 300%; padding-right: 20px; padding-right: 20px">
         <h1>This is <br> just a <br> framework </h1>
     </header>
-    <div style="display: inline-block; width: 700px;">
-    <header style="width: 700px; margin: auto;">
-        <h1>Where does the Web come from?</h1>
-        <h2>The Intelligent Web – Web 4.0</h2>
-        <img style="height: 700px" id="image" src="ChatGPT-Logo.gif">
-    </header>
+    <div id="focus"></div>
+    <h1 id="msg">Framing history (including the history of the web) as classifiable eras simplifies our understanding of
+        an
+        enormous and complex system. It is a framing device. It is not inherently bad. But it is worth being conscious
+        of how it
+        shapes our thinking, and who gets to define the rules.</h1>
+    <div style="display:inline-block; width: 700px; margin-left: 5%; margin-right: auto;">
+        <header style="width: 700px; margin: auto;">
+            <h1>Where does the Web come from?</h1>
+            <h2>The Intelligent Web – Web 4.0</h2>
+            <img style="height: 700px" id="image" src="ChatGPT-Logo.gif">
+        </header>
 
-    <main style="width: 700px; margin: auto;">
-        <p>Web 4.0 is often envisioned as the “ubiquitous Web” or “Intelligent Web”, where artificial intelligence and the Internet of Things (IoT) are fully integrated into daily life.</p>
-        <p>In this stage, the Web becomes a seamless environment in which humans, devices, and intelligent agents interact continuously. Personalized assistants, autonomous systems, and real-time machine learning make the Web highly adaptive and context-aware.</p>
-    </main>
-</div>
-</div>
+        <main style="width: 700px; margin: auto; ">
+            <p>Web 4.0 is often envisioned as the “ubiquitous Web” or “Intelligent Web”, where artificial intelligence
+                and the Internet of Things (IoT) are fully integrated into daily life.</p>
+            <p>In this stage, the Web becomes a seamless environment in which humans, devices, and intelligent agents
+                interact continuously. Personalized assistants, autonomous systems, and real-time machine learning make
+                the Web highly adaptive and context-aware.</p>
+        </main>
+    </div>
     <footer style="width: 700px; margin: auto; text-align: right;">
         <small>© Willow Casinghino, cart 211, fall 2026, assessment 1</small>
     </footer>
@@ -36,4 +110,5 @@
         picture.style.filter = "hue-rotate(" + angle + "deg)";
     </script>
 </body>
+
 </html>
