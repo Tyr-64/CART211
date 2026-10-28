@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=""UTF-8">
+        <meta name="viewport" content="width=decive-width, initial-scale=1.0">
+        <title> Humans of New York</title>
+        
+        <meta name="description" content="A Humans of NEw York story. Course exercise (CART 211) exploring semantic HTML, CSS grid and accesible media presentation">
+        <!-- The dimensions and alternative description of the preview -->
+        <meta property="og:type" content="article">
+        <meta property="og:title" content="Humans of New York">
+        <meta property="og:descrpition" content="A humans of New York story for CART 211">
+
+
+        <!-- Dummy links below, put your own in -->
+        <meta property="og:url" content="https://hybrid.concordia.ca/btodd/humans.html"> 
+        <meta property="og:image" content="https://hybrid.concordia.ca/btodd/humans/assets/america_pageant_og.jpg">"
+
+        <meta property="og:image:width" content="1200">"
+        <meta property="og:image:height" content="630">"
+        <meta property="og:image:alt" content="Portrait associated with the America Pageant Story">
+
+        <!-- Twitter card metadata control the appearance of shared links on X -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="A Humans of New York story for CART 211">
+        <meta name="twitter:description" content="A humans of New York story for CART 211">
+        <meta name="twitter:image" content="https://hybrid.concordia.ca/btodd/humans/assets/america_pageant_og.jpg">
+
+        <!-- Identifies the preferred URL for this page to search engines -->
+        <link rel="canonical" href="https://hybrid.concordia.ca/btodd/humans.html">
+
+        <!-- Adds a small icon to browser tab, add favicon file (ico can be converted PNG) -->
+        <link rel="icon" href="assets/favicon.ico">
+
+        <!-- Identifies the author and copyright information -->
+         <meta name="author" content="Willow Casinghino">
+         <meta name="copyright" content="Willow Casinghino, student projct etc etc">
+         
+         <!-- Stylesheet link -->
+          <link rel="stylesheet" href="styles.css">
+          <!-- Inclusion of Google Fonts, use embed code -->
+           <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Rubik+Storm&display=swap" rel="stylesheet">
+
+        <!-- Loads Font Awesome, a library of ready-made icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    </head>
+    <body>
+        <div id="wrapper">
+             <header>
+                <nav>
+                    <div class="logo">
+                        <a href="#">
+                            <img src="assets/logo.png" alt="Logo" width="110" height="50">
+                        </a>
+                    </div>
+                    <div class="menu1">
+                        <a href="stories.html" class="menu1">STORIES</a>
+                        <a href="#" class="menu1">SERIES</a>
+                        <a href="index.html" class="menu1">ABOUT</a>
+                    </div>
+                </nav>
+             </header>
+             <section>
+                <!-- ARTICLE: contains a related piece of written and visual content -->
+                 <article>
+                    <h1>Humans of New York</h1>
+                    <p class="intro">
+                        Humans of New York began as Brandon Stanton photography project in 2010.  The initial goal was to photograph 10,000 New Yorkers on the street, and create an exhaustive catalogue of the city’s inhabitants.
+                    </p>
+                    <p class="intro">
+                        Taken together, these portraits and captions became the subject of a vibrant blog. HONY now has over twenty million followers on social media, and provides a worldwide audience with daily glimpses into the lives of strangers on the streets of New York City. 
+                    </p>
+                    <!-- IMAGE GALLERY: The pict class create the CSS grid layout. Each figure is one gallery item. Classes im1 trhough im14 les CSS position images at different sizes to create an asymmetrical collage. -->
+                     <div class="pict">
+                        <!-- Figure 1: image, link, and caption -->
+                         <figure class="im1">
+                            <a href="story1.html">
+                                <img src="assets/america_pageant.jpg" class="im" alt="America Pageant Portrait">
+                            </a>
+                            <!-- Caption shown over image using CSS -->
+                             <div class="hover-text">America Pageant</div>
+                         </figure>
+                         <!-- Fig 2 -->
+                        <figure class="im2">
+                            <a href="story1.html">
+                                <img src="assets/Chipwich_guy.jpg" class="im" alt="Chipwich guy Portrait">
+                            </a>
+                            <!-- Caption shown over image using CSS -->
+                             <div class="hover-text">Chipwich guy</div>
+                         </figure>
+                         <!-- Fig 3, end of life patient -->
+                          <!-- Fig 4, Fake sport story portrait, fake sport -->
+                           <!-- Fig 5 gettin married, getting married portrait -->
+                            <!-- Fig 6 invisibility, invisibility portrait -->
+                             <!-- Fig 7 right and wrong, right and wrong story portrait -->
+                              <!-- Fig 8, homework, homework story protrait -->
+                               <!-- Fig 9 sketchbook -->
+                                <!-- Fig 10 the algorithm -->
+                                 <!-- fig 11 the empire -->
+                                  <!-- Fig 12 mardi gras-->
+                                   <!-- Fig 13 They loved me -->
+                                    <!-- Fig 14 Exhausting to me-->
+                     </div>
+                     <!-- End of image gallery -->
+                 </article>
+             </section>
+             <footer>
+                <section cleass="social-section">
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="social-facebook" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" class="social instagram" aria-label="Instragram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com" class="social twitter" aria-label="X">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://tiktok.com" class="social tiktok" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        <a href="https://youtube.com" class="social youtube" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="social linkedin" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com" class="social github" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+                </section>
+                <div class="credits">
+                    <p>Copyright Willow Casinghino, cart 211, Fall 2026, assessment 5, credits: humansofnyarchive.com</p>
+                </div>
+             </footer>
+        </div>
+    </body>
+</html>
